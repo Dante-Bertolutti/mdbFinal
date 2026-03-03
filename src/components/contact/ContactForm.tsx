@@ -53,7 +53,7 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="p-8 rounded-2xl bg-mdb-dark-2 border border-gray-800/50 text-center">
+      <div className="p-5 sm:p-8 rounded-2xl bg-mdb-dark-2 border border-gray-800/50 text-center">
         <div className="h-16 w-16 rounded-full bg-mdb-orange/10 flex items-center justify-center mx-auto mb-4">
           <svg
             className="h-8 w-8 text-mdb-orange"
@@ -92,7 +92,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="p-8 rounded-2xl bg-mdb-dark-2 border border-gray-800/50">
+    <div className="p-5 sm:p-8 rounded-2xl bg-mdb-dark-2 border border-gray-800/50">
       <h3 className="text-xl font-semibold text-white mb-2">
         Send us a message
       </h3>
@@ -120,7 +120,7 @@ export default function ContactForm() {
               id="firstName"
               name="firstName"
               required
-              className="w-full px-4 py-2.5 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors"
+              className="w-full px-4 py-3 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors text-base"
               placeholder="John"
             />
           </div>
@@ -133,7 +133,7 @@ export default function ContactForm() {
               id="lastName"
               name="lastName"
               required
-              className="w-full px-4 py-2.5 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors"
+              className="w-full px-4 py-3 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors text-base"
               placeholder="Doe"
             />
           </div>
@@ -148,7 +148,7 @@ export default function ContactForm() {
             id="email"
             name="email"
             required
-            className="w-full px-4 py-2.5 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors"
+            className="w-full px-4 py-3 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors text-base"
             placeholder="john@example.com"
           />
         </div>
@@ -161,7 +161,7 @@ export default function ContactForm() {
             type="text"
             id="company"
             name="company"
-            className="w-full px-4 py-2.5 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors"
+            className="w-full px-4 py-3 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors text-base"
             placeholder="Your Company"
           />
         </div>
@@ -173,7 +173,7 @@ export default function ContactForm() {
           <select
             id="service"
             name="service"
-            className="w-full px-4 py-2.5 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors"
+            className="w-full px-4 py-3 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors text-base"
           >
             <option value="">Select a service...</option>
             {serviceOptions.map((opt) => (
@@ -193,7 +193,7 @@ export default function ContactForm() {
             name="message"
             required
             rows={5}
-            className="w-full px-4 py-2.5 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors resize-none"
+            className="w-full px-4 py-3 rounded-lg bg-mdb-dark-3 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-mdb-orange focus:ring-1 focus:ring-mdb-orange transition-colors resize-none text-base"
             placeholder="Tell us about your project..."
           />
         </div>

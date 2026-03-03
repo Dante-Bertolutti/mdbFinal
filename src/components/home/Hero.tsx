@@ -27,12 +27,12 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="text-5xl sm:text-7xl font-bold text-white tracking-tight leading-tight">
+        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white tracking-tight leading-tight">
           Web Solutions that{" "}
           <span className="text-mdb-orange">Empower</span> Your Business
         </h1>
 
-        <p className="mt-6 text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
+        <p className="mt-6 text-base sm:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto">
           Kelowna&apos;s trusted web development and IT services team. We build
           custom web applications, design responsive websites, provide reliable
           hosting, and deliver hands-on IT support and computer repairs for small

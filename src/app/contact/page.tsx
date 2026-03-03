@@ -53,7 +53,7 @@ export default function ContactPage() {
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 bg-mdb-black">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-base font-semibold text-mdb-orange">Contact Us in Kelowna, BC</p>
-          <h1 className="mt-2 text-4xl sm:text-6xl font-bold text-white tracking-tight">
+          <h1 className="mt-2 text-3xl sm:text-4xl lg:text-6xl font-bold text-white tracking-tight">
             Get In Touch
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">
@@ -67,7 +67,7 @@ export default function ContactPage() {
       {/* Contact Section */}
       <section className="bg-mdb-dark-1 py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-16">
             {/* Form */}
             <div className="lg:col-span-3">
               <AnimateOnScroll>
@@ -150,7 +150,7 @@ export default function ContactPage() {
                   {/* Stats */}
                   <div className="pt-8 border-t border-gray-800/50">
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="p-4 rounded-xl bg-mdb-dark-2 border border-gray-800/50 text-center">
+                      <div className="p-3 sm:p-4 rounded-xl bg-mdb-dark-2 border border-gray-800/50 text-center">
                         <p className="text-2xl font-bold text-mdb-orange">
                           {companyInfo.projectsCompleted}+
                         </p>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                           Projects Completed
                         </p>
                       </div>
-                      <div className="p-4 rounded-xl bg-mdb-dark-2 border border-gray-800/50 text-center">
+                      <div className="p-3 sm:p-4 rounded-xl bg-mdb-dark-2 border border-gray-800/50 text-center">
                         <p className="text-2xl font-bold text-mdb-orange">
                           {companyInfo.yearsExperience}
                         </p>

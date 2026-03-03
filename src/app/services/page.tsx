@@ -83,7 +83,7 @@ export default function ServicesPage() {
           <p className="text-base font-semibold text-mdb-orange">
             Our Services
           </p>
-          <h1 className="mt-2 text-4xl sm:text-6xl font-bold text-white tracking-tight">
+          <h1 className="mt-2 text-3xl sm:text-4xl lg:text-6xl font-bold text-white tracking-tight">
             Web Development &amp; IT Services in Kelowna
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">

@@ -27,7 +27,7 @@ export default function AboutPage() {
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 bg-mdb-black">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-base font-semibold text-mdb-orange">About Us</p>
-          <h1 className="mt-2 text-4xl sm:text-6xl font-bold text-white tracking-tight">
+          <h1 className="mt-2 text-3xl sm:text-4xl lg:text-6xl font-bold text-white tracking-tight">
             Kelowna&apos;s Web Development &amp; IT Team
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">

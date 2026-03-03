@@ -37,13 +37,13 @@ export default function PortfolioShowcase({
 
   return (
     <section className={`w-full ${bgClass} py-16 md:py-20`}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10 sm:gap-16">
         {/* Header */}
         <header className="max-w-2xl text-left">
           <p className="text-xs uppercase tracking-[0.45em] text-mdb-orange font-semibold">
             Featured Project
           </p>
-          <h2 className="mt-4 text-4xl md:text-5xl font-semibold text-white">
+          <h2 className="mt-4 text-2xl sm:text-4xl md:text-5xl font-semibold text-white">
             {projectName}
           </h2>
           <p className="mt-4 text-base md:text-lg text-gray-400">
@@ -56,7 +56,7 @@ export default function PortfolioShowcase({
           {/* Live preview */}
           <div className="flex">
             <div className="flex h-full w-full flex-col rounded-lg border border-gray-700 bg-mdb-dark-2 shadow-md">
-              <div className="flex flex-col space-y-1.5 p-6">
+              <div className="flex flex-col space-y-1.5 p-4 sm:p-6">
                 <h3 className="text-xl font-semibold text-white">
                   Live Experience
                 </h3>
@@ -64,11 +64,11 @@ export default function PortfolioShowcase({
                   Interact with the live site directly below.
                 </p>
               </div>
-              <div className="flex-1 p-6 pt-0">
+              <div className="flex-1 p-4 pt-0 sm:p-6 sm:pt-0">
                 <iframe
                   title={`${projectName} Live Preview`}
                   src={embedUrl}
-                  className="h-full min-h-[420px] w-full overflow-hidden rounded-xl border border-gray-700 shadow-inner"
+                  className="h-full min-h-[280px] sm:min-h-[420px] w-full overflow-hidden rounded-xl border border-gray-700 shadow-inner"
                 />
               </div>
             </div>
@@ -128,22 +128,22 @@ export default function PortfolioShowcase({
       {/* Modal lightbox */}
       {selectedImageIndex !== null && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4 py-8"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-3 py-4 sm:px-4 sm:py-8"
           onClick={() => setSelectedImageIndex(null)}
         >
           <div
-            className="relative w-full max-w-5xl rounded-3xl border border-gray-700 bg-mdb-dark-2 p-6 shadow-2xl"
+            className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-2xl sm:rounded-3xl border border-gray-700 bg-mdb-dark-2 p-4 sm:p-6 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setSelectedImageIndex(null)}
-              className="absolute right-4 top-4 z-10 rounded-full bg-mdb-dark-3 p-2 text-gray-400 hover:text-white transition-colors"
+              className="absolute right-3 top-3 sm:right-4 sm:top-4 z-10 rounded-full bg-mdb-dark-3 p-2.5 sm:p-2 text-gray-400 hover:text-white transition-colors"
               aria-label="Close"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
 
-            <div className="grid gap-6 lg:grid-cols-[3fr_2fr]">
+            <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-[3fr_2fr]">
               <div className="overflow-hidden rounded-2xl">
                 <Image
                   src={galleryImages[selectedImageIndex].src}
@@ -154,7 +154,7 @@ export default function PortfolioShowcase({
                 />
               </div>
               <div className="flex flex-col justify-center gap-4">
-                <h3 className="text-2xl font-semibold text-white">
+                <h3 className="text-xl sm:text-2xl font-semibold text-white">
                   {galleryImages[selectedImageIndex].title}
                 </h3>
                 <p className="text-gray-400">

@@ -41,3 +41,18 @@ html {
   background: var(--color-mdb-orange);
   color: white;
 }
+
+/* Prevent iOS zoom on form inputs */
+@media screen and (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Ensure tap targets are at least 44px */
+@media (pointer: coarse) {
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
